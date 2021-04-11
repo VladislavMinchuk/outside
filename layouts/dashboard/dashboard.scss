@@ -1,0 +1,26 @@
+.dashboard_grid {
+  height: 100%;
+
+  @include media('>=desktop') {
+    display: grid;
+    margin: auto;
+    grid-template-rows: auto 1fr ;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 0;
+    grid-template-areas:
+    "nav header"
+    "nav main";
+  }
+}
+
+.dashboard__header {
+  grid-area: header;
+  background: $green-light;
+}
+.dashboard__nav {
+  grid-area: nav;
+  background: $blue-light;
+}
+.dashboard__main {
+  grid-area: main;
+}
