@@ -3,16 +3,18 @@
     <Card
       icon="astronaut"
       text="astronauts"
+      link="/astronauts"
     />
   </section>
 </template>
 
-<script>
-import { Vue, Component, Prop } from 'vue-property-decorator'
-import Card from '@/components/card'
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
 
+@Component({ layout: 'dashboard/index' })
 export default class MainPage extends Vue {
   name = 'HomePage'
-  layout = 'dashboard/index'
 }
 </script>
+
+<style lang="scss" src="./home.scss" />

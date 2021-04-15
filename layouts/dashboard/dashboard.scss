@@ -1,5 +1,6 @@
 .dashboard_grid {
   height: 100%;
+  color: $red;
 
   @include media('>=desktop') {
     display: grid;
@@ -15,12 +16,16 @@
 
 .dashboard__header {
   grid-area: header;
-  background: $green-light;
+  background: $dark-blue2;
+  border-bottom: 1px solid $blue;
 }
 .dashboard__nav {
   grid-area: nav;
-  background: $blue-light;
+  background: $dark-blue2;
+  border-right: 1px solid $blue;
 }
 .dashboard__main {
   grid-area: main;
+  background: $dark-blue;
+  padding: 15px;
 }

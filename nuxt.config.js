@@ -18,6 +18,16 @@ export default {
     ]
   },
 
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'home',
+        path: '/',
+        component: resolve(__dirname, 'pages/home')
+      })
+    }
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/scss/main.scss'
