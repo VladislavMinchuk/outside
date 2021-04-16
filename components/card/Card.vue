@@ -1,6 +1,7 @@
 <template>
   <NuxtLink :to="link" class="card-link">
-    <div>{{ text }}</div>
+    <div class="card-link__title">{{ text }}</div>
+    <span v-if="icon" class="card-link__icon" :class="icon" />
   </NuxtLink>
 </template>
 

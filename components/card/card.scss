@@ -1,0 +1,29 @@
+.card-link {
+  display: inline-block;
+  border: 1px solid $turquoise;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  color: $white;
+  transition: box-shadow .3s;
+  
+  &:hover {
+    color: $white;
+    box-shadow: 0 0 10px 0px $turquoise;
+
+    .card-link__icon {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.card-link__title {
+  margin: 0 0 14px;
+}
+
+.card-link__icon {
+  display: inline-block;
+  font-size: 48px;
+  color: $red;
+  transition: transform .3s;
+}

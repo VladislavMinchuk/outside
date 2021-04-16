@@ -1,7 +1,7 @@
 <template>
   <section class="dashboard-cards">
     <Card
-      icon="astronaut"
+      icon="icon-astronaut-user"
       text="astronauts"
       link="/astronauts"
     />
